@@ -1,0 +1,57 @@
+body {
+  font-size: 18px;  
+  background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%) fixed no-repeat;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+}
+.image-wrapper {
+  height: 70vh;
+  margin: 1em;
+  text-align: center;
+}
+.image {
+  height: 100%;
+}
+
+.orange {
+  text-decoration: none;
+  color: navy; /* What were you thinking would happen here? */
+}
+
+.question[data-message=""] .more {
+  display: none;
+}
+.question[data-message=""] .options {
+  display: flex;
+}
+.question::before {
+  content: attr(data-message);
+  color: #030303;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+}
+.question .options {
+  display: none;
+}
+.question .more {
+  display: block;
+}
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.options button, .more button {
+  font-size: 2em;
+}  
+.more {
+  display: none;
+  text-align: center;
+}
