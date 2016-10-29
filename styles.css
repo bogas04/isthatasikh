@@ -10,7 +10,7 @@ body {
   text-align: center;
 }
 .image-wrapper {
-  height: 70vh;
+  height: 50vh;
   margin: 1em;
   text-align: center;
 }
@@ -53,5 +53,9 @@ body {
 }  
 .more {
   display: none;
+  text-align: center;
+}
+
+.footer {
   text-align: center;
 }
